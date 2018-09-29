@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background-color: rgb(236, 172, 183);
+}
+h1{
+    font-family: fantasy;
+    color:black;
+    text-shadow: 1px 1px 0px white;
+    
+}
+p{
+    font-family:monospace;
+    color:white;
+    font-size: 150%;
+}
