@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exempel 2</title>
+</head>
+<body>
+    <h1>Exempel 2</h1>
+
+
+    <script>
+      "use strict";
+
+    //Deklarera en variablar
+    var namn1;
+    let namn2;
+    let namn5, namn4;
+
+    //Tilldela
+    namn1 = "Toshiko";
+    namn2 = "Kuno";
+
+    //Initiera(deklarera och tilldela)
+    let namn3 = "Toshiko Kuno";
+
+    //Initiera flera variablar !!Bästa sättet
+    let firstName ="Toshiko",
+        lastName  = "Kuno",
+        age       = 29, //heltal
+        mobile    = "034-2342533434";
+    
+     let to = "toshiko"; // En automatisk initiering av en variabel
+                     //OBS! Inte bra
+     to = namn3; // vi kopierar "Toshiko Kuno" in i variabeln to.
+
+    console.log(to);  // Toshiko Kuno
+    console.log(namn3); //Toshiko kuno
+    //console.log(barn); //ReferenceError odeklarera 
+      
+
+    let a = 10;
+    let b = a;
+
+    console.log(b);
+
+    //skapa en konstant
+    const MAX_VALUE = 10; 
+    //MAX_VALUE = 20; //Fel Vi får inte ändra konstanter
+    console.log(MAX_VALUE);
+
+   // let 123; //vi får inte påbörja med siffror
+    
+    console.log("It´s here");
+
+    </script>
+    
+</body>
+</html>
