@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let name = prompt('Vad heter du?');
+    alert('hej'+ ' ' + name + '!\nDu ska nu ange två tal...');
+    
+    let tal1 = prompt('Ange tal1');
+    let tal2 = prompt('Ange tal2');
+    alert(tal1 + tal2); // konkateniring　stringを返す
+    alert(+tal1 + +tal2); // Unary (+) Operator
+    
+
+   //Explicit typomvandling- cast
+   //Konvertera eller omvandla typer
+   //T.ex. från string till number
+    alert(Number(tal1)+ Number(tal2)); //textを入力をするとNaNになる
+
+    </script>
+</body>
+</html>
+
+

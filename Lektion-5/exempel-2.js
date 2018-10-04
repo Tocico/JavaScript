@@ -46,3 +46,27 @@ console.log(x2/x2); // Nan
 
 
 console.log(x);
+
+// Konkatenering
+let firstName = 'Toshiko';
+let lastName = 'Kuno';
+let fullName = 'Hej!'+ firstName + ' ' + lastName ;
+console.log(fullName);
+
+x = "1" + 2 ; //12 OBS! inte addition
+x = 1 + "2"; //12
+x = "1" + "2"; //12
+x = "1" + 2 + 3; //123
+x = 1 + 2 + "3"; //33
+x = "1" + (2 + 3); //15
+x = "1" - "2"; // -1 
+// Vi får en automatisk typomvandling
+// Implicit typomvandling
+x = 1 - "2"; // -1
+x = "1" - 2; // -1
+
+x = "1" * "2"; // 2
+x = "1" / "2";  
+//0.5
+
+console.log(x);
