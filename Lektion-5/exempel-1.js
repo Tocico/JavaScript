@@ -59,6 +59,10 @@ console.log(stack);
 console.log("Aktuell längd: ");
 console.log(currentLength);
 
+let antal3 = stack.push("Bla bla bla");
+console.log(stack);
+console.log("Aktuell längd: ");
+console.log(antal3);
 
 
 // Ta bort ett element

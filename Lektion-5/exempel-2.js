@@ -35,7 +35,14 @@ x -= 2; //5 Minska med två
 //
 x = "TEXT";
 x = x / 2; // Nan(Not a number)
-x = 2 / x;
+x = 2 / x; // Nan
+x = x / x; // Nan
+
+let x2;
+console.log(x2/2); // Nan
+console.log(2/x2); // Nan
+console.log(x2/x2); // Nan
+
 
 
 console.log(x);
