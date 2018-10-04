@@ -43,14 +43,20 @@ if(again)
 
 
 // 5. Null
+let nothing = "Something"
+nothing = "";
+console.log(nothing);
+// nothing = null;
+// console.log(nothing);
 
-   var nothing = null;
-   console.log("-------------------------");
-   console.log(typeof firstName);
-   console.log(typeof age);
-   console.log(typeof again);
-   console.log(typeof name);
-   console.log(typeof nothing);
+
+//    var nothing = null;
+//    console.log("-------------------------");
+//    console.log(typeof firstName);
+//    console.log(typeof age);
+//    console.log(typeof again);
+//    console.log(typeof name);
+//    console.log(typeof nothing);
 
 
 
