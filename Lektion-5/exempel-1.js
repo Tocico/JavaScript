@@ -54,16 +54,26 @@ console.log(stack);
 stack.push('Javascript2');
 console.log(stack);
 
+let currentLength = stack.push("Bla bla bla");
+console.log(stack);
+console.log("Aktuell längd: ");
+console.log(currentLength);
+
 
 
 // Ta bort ett element
 stack.pop(); // OBS!!!Ta bort sista element
+stack.pop(); // OBS!!!Ta bort sista element
+stack.pop(); // OBS!!!Ta bort sista element
+stack.pop(); // OBS!!!Ta bort sista element
 console.log(stack);
 
 
-let kurs = stack.pop(); //spara sista element innan borttagning
+
+ let kurs = stack.pop(); //spara sista element innan borttagning
 console.log(stack);
 console.log(kurs);
+/*
 
 //mer om array-konstruktion
 let test1 = new Array(10,20,30);
@@ -85,7 +95,8 @@ console.log(test4.length);
 let test5 = new Array('1973');
 test5.push(2008);
 test5.push(2018);
-console.log(test5);
+console.log(test5); */
 
 
 
+ 
