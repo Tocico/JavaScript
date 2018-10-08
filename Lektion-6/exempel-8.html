@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countTax(){
+            let pris = prompt("Vad kostar det?");
+            let skatt = 0.25;
+            let utanSkatt = pris * skatt; // 75
+            let skattePris = pris * 0.75;
+            alert("Du betalar " + pris+ '\n' + "Varav skatt = " + skattePris + "exkl moms: " + utanSkatt);
+
+        }
+        countTax();
+
+
+        
+        
+        
+        
+        </script>
+
+    
+</body>
+</html>
