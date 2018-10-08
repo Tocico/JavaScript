@@ -1,4 +1,4 @@
-//<<<aritmetiska operatorer i JS
+  //<<<aritmetiska operatorer i JS
 
 let y = 5 ;
 let x;
@@ -69,4 +69,12 @@ x = "1" * "2"; // 2
 x = "1" / "2";  
 //0.5
 
+console.log(x);  
+
+let x = "apple";
+x = x * 0 ; // NaN
+x = x - 2;
+x = x + NaN;
 console.log(x);
+
+console.log(1+1); 
