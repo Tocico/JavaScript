@@ -7,11 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+<!--1. Skapa ett program som läser in eett namn via en prompt.
+   2. Skicka namnet till en funktion som returnerar en hälsningasfras.
+     t.ex. "Hej welcome to my page"
+   3. Visa meddelandet på webbsidan.(ej alert eller console)
+
+-->
+
     <script>
+        // Skapa ett HTML dokument och bädda in kod i en script tagg
       let namn = prompt('What is your name?');
       function hello (name){
       
-          return 'Hej' + namn + 'Welcome to our website';
+                return '<h1>Hej ' + namn + ' Welcome to our website</h1>';
       }  
       document.write(hello(name));
         

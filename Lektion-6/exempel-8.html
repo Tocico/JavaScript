@@ -10,10 +10,9 @@
     <script>
         function countTax(){
             let pris = prompt("Vad kostar det?");
-            let skatt = 0.25;
-            let utanSkatt = pris * skatt; // 75
-            let skattePris = pris * 0.75;
-            alert("Du betalar " + pris+ '\n' + "Varav skatt = " + skattePris + "exkl moms: " + utanSkatt);
+            let skattPris = pris * 0.25; // 25
+            let utanSkatt = pris * 0.75; // 75
+            alert ("Du betalar " + pris+ '\n' + "Varav skatt = " + skattPris + "exkl moms: " + utanSkatt)
 
         }
         countTax();

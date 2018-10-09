@@ -36,5 +36,13 @@ function fullName1 (firstName, lastName){
 
        let result2 = function (){
             return  "Jag är en IIFE-3";
-       }
-       console.log(result2); // Hela funktionen returneras
+        }
+        console.log(result2); // Hela funktionen returneras
+
+
+        // Utan IIFE
+                    function myFun (msg){
+                         return msg = "Jag är en IIFE-4";
+                    }
+                     
+                    console.log(myFun(msg));

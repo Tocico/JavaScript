@@ -94,6 +94,8 @@ function log(text){
     console.log('*********************************');
 
 }
+
+console.log('----------------------------------------------------');
 log('Hej');
 
 //En function som anropar en annan function
@@ -126,10 +128,4 @@ manyThings(1,2,3);
 manyThings("Toshiko","Kuno",1);
 manyThings();
 
-let alf =['a','b','c'];
-console.log(alf.push('d','e'));
-console.log(alf);
 
-let alf1 = ['a','b','c','d','e'];
-alf1.pop();
-console.log(alf1);
