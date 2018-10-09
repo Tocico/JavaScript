@@ -15,3 +15,6 @@ let antal = customers.length;
 let LastIndex = antal-1;
 let sista = customers[LastIndex];
 console.log(sista);
+
+let alf3 = ['a','b','c'];
+console.log(alf3.unshift('e','f'));
