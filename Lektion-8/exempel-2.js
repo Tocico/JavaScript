@@ -8,11 +8,38 @@ function Person(name,age){
 this.name = name;  // this.name är egenskap 
 this.age = age;
 this.children = [];
+this.email = [];
+this.cars = [];
 }
+
+// Skapa en konstruktor/typ som beskriber en bil
+function Car(regnr, fabrikat){
+       this.regnr = regnr; //this pekar på aktuella objekt. Objektens egenskaper
+       this.fabrikat = fabrikat;
+}
+
+//Skapa en instans av Car = skapa ett object
+let c1 = new Car('abc123', 'volvo');        //new som skapar objekt
+//console.log(c1.regnr);
+
+let c2 = new Car('2234234','toyota');
+
+
+
+
 
 // Skapa flera objekt av Person() = skapa nya instanser
 let toshiko = new Person('TOshiko', 29); // Vi kan inte använda{}
 let taeko = new Person('Taeko',27);
+
+// TOshiko har köpt c1 och c2 (två bilar)
+toshiko.cars.push(c1,c2);
+toshiko.cars[0].regnr; //abc123
+toshiko.cars[1].regnr; //2234234
+
+
+console.log(toshiko);
+
 
 //toshiko och taeko blir två nya referenser till två olika objekt
 
