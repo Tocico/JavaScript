@@ -16,13 +16,4 @@ let b = a + 2;
 b = 5;
 
 console.log(a);
-<<<<<<< HEAD
-<<<<<<< HEAD
-console.log(b);
-
-console.log(a);
-=======
->>>>>>> def5708af5f8e7c3ff7b5133ae4b2f72718c17aa
-=======
->>>>>>> def5708af5f8e7c3ff7b5133ae4b2f72718c17aa
 console.log(b);

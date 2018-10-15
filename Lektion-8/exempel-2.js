@@ -10,6 +10,7 @@ this.age = age;
 this.children = [];
 this.email = [];
 this.cars = [];
+this.pen = [];
 }
 
 // Skapa en konstruktor/typ som beskriber en bil

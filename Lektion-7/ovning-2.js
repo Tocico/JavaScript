@@ -88,6 +88,7 @@ console.log('x = ' + x +'\n' + 'y =' + y);
 
 
 
+// Senast teknik 
 let x1 = 1, y1 = 2;
 console.log('x1 = ' + x1 +'\n' + 'y1 =' + y1);
 [x1,y1] = [y1,x1]
