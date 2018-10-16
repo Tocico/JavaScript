@@ -13,7 +13,7 @@ this.cars = [];
 this.pen = [];
 }
 
-// Skapa en konstruktor/typ som beskriber en bil
+// Skapa en konstruktor/typ som beskriver en bil
 function Car(regnr, fabrikat){
        this.regnr = regnr; //this pekar på aktuella objekt. Objektens egenskaper
        this.fabrikat = fabrikat;

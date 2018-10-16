@@ -18,6 +18,6 @@ function demo(){
     console.log(this.innerHeight + 'px');
     // this pekar på ett objekt som heter Window(i webbläsare)
 }
-//demo();
+demo();
 
 //Två bra metoder i objektet Window
