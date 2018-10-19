@@ -24,3 +24,4 @@ toshiko.info();
 // console.log(toshiko.info()); Undefined
 
 //console.log(toshiko2.info());
+console.log(toshiko);
