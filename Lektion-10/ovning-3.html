@@ -11,22 +11,22 @@
         function a(points){
        let grade = '';
        switch(true){
-          case points <= 25:
+          case points < 25:
              grade = 'F';
              break;
-          case 26 < points && points <= 30: 
+          case 25 <= points && points < 30: 
             grade = 'E';
             break;
-          case 31 < points && points <= 35: 
+          case 30 <= points && points < 35: 
              grade = 'D';
              break;
-          case 36 < points && points <= 40: 
+          case 35 <= points && points < 40: 
              grade = 'C';
              break;
-          case 41< points && points <= 45: 
+          case 40 <= points && points < 45: 
               grade = 'B'; 
               break;
-          case 46< points && points <= 50: 
+          case 45 <= points && points <= 50: 
               grade = 'A'; 
               break;
           default:
