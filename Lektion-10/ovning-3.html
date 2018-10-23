@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let points = +prompt('Hur många poängen har du fått?');
+        function a(points){
+       let grade = '';
+       switch(true){
+          case points <= 25:
+             grade = 'F';
+             break;
+          case 26 < points && points <= 30: 
+            grade = 'E';
+            break;
+          case 31 < points && points <= 35: 
+             grade = 'D';
+             break;
+          case 36 < points && points <= 40: 
+             grade = 'C';
+             break;
+          case 41< points && points <= 45: 
+              grade = 'B'; 
+              break;
+          case 46< points && points <= 50: 
+              grade = 'A'; 
+              break;
+          default:
+             alert('Skriva heltal mellan 0-50');
+
+       }
+       return grade;
+    }
+       alert('Din grade är'+ a(points));
+        
+    </script>
+    
+</body>
+</html>

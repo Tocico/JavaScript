@@ -58,8 +58,8 @@ console.log(kuno[0].name);
 kuno[0].name = 'Hitoshi';
 console.log(kuno[0].name);
 
-delete kuno[0].name;
-
+//delete kuno[0].name;
+console.log('--------dsfsf------');
 console.log(kuno);
 
 //Objekt kan innehåller arrayer

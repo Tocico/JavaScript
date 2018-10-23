@@ -21,3 +21,5 @@ function demo(){
 demo();
 
 //Två bra metoder i objektet Window
+
+

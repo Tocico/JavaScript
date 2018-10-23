@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lektion 10</title>
+</head>
+<body>
+    <script>
+        function promptAge(){
+
+         let age = prompt("Hur gammal är du?") 
+         alert(age);
+        if(age === null || age === '' || isNaN(age))
+        alert('Felaktigt matning');
+           return;
+
+
+        console.log(age < 18);
+        let voteable = '';
+        if(age < 18){
+            voteable = 'Du får inte rösta';
+        }  
+        else if(age >= 18){
+            voteable = 'Du får rösta';
+        }
+        alert(voteable);
+        
+        // Omvandla if-else (logiken) ovanför till ternary istället
+        // ? :
+        // voteable2 = age>18? 'Du får rösta':'DU får inte rösta';
+        // // Villkor  ? Gör detta om sant : Gör detta om falskt
+        // alert(voteable2)
+        
+    }
+    promptAge();
+        
+    </script>
+    
+</body>
+</html>

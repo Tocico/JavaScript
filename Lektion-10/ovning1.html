@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let totalMin = +prompt('Hur många minuter ringer du per månad? ');
+    let totalCos = +prompt('Hur mucket kostar det per minuter?');
+    
+    let rabattsats = 0.10; // 10% off
+    let mistaKost = 1000; // Minst 1000 kr
+    
+     
+
+    let rabbat = 0;
+    let totalKostnad = totalMin * totalCos;
+    if(totalKostnad >= mistaKost){
+        rabbat = totalKostnad * rabattsats;
+        totalKostnad = totalKostnad - rabbat; 
+    }
+
+    let resultat = 'Din kostnad per månad är: ' + totalKostnad + 'kr';
+    resultat += '\n';
+    resultat += 'Din rabatt är: ' + rabbat + 'kr';
+    resultat += '\n';
+    resultat += 'Total summa är: ' + (totalKostnad + rabbat) + 'kr';
+   
+     alert(resultat);
+
+    
+  </script>
+    
+</body>
+</html>
