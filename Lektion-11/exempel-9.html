@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let biggest = 0;
+        let lowest = Number.MAX_VALUE;
+        let antal;
+        let arr = [];
+        
+        // 0  ........ MAX_VALUE
+
+
+        while(true){
+            
+            antal = prompt('Skriv ett nummer heltal större än 0');
+
+            if(antal === null) // trycka cancel
+            break;
+            
+
+            if(antal>0){ // JS struntar i 0 och minus nummer
+            
+            biggest = Math.max(antal,biggest);
+            lowest = Math.min(antal,lowest);
+            }
+            
+        }
+        alert('Du har skrivit den största :' + biggest + '\nden minsta talet:'+ lowest ); 
+        
+        // while(true){
+            
+        //     antal = prompt('Skriv ett nummer heltal större än 0');
+
+        //     if(antal === null) // trycka cancel
+        //     break;
+        //     arr.push(antal);
+            
+        //     if(antal>0){ // JS struntar i 0 och minus nummer
+                
+                
+        //     }
+            
+        //     lowest = Math.min(...arr);
+        //     biggest = Math.max(...arr);
+        // }
+        // alert('Du har skrivit den största :' + biggest + '\nden minsta talet:'+ lowest );
+        
+            
+       
+        
+        
+        
+    </script>
+
+
+    
+</body>
+</html>

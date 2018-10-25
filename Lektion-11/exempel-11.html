@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n;
+        let sum = 0;
+        
+        while(true){
+            n = +prompt('Skriv ett heltal');
+        if(n === null)
+        break;
+
+
+        if(Number.isInteger(n)){
+            for(i = 1; i<= n; i++){
+                sum += i;
+            }
+            break;           
+        }
+        else{
+            alert('Felaktig inmatning!');
+            
+        }
+        
+    }    
+    
+    alert('Summan är' + sum);
+
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

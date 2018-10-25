@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"
@@ -16,6 +16,34 @@
 
     alert(totalCost < priseYear? 'Du kommer betala' + totalCost+' kr \n Du kan köpa en gångsbiljett': 'Du kan köpa årskort' )
      
+    
+</script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    
+    <title>Övning2</title>
+</head>
+<body>
+
+<script>
+    let answer = prompt('Vad kostar det årskort?\nHur mycket kostar det en gångs biljett?\nHur många gånger planerar du att träna under året?\nÅrskort,Biljetter,Antal');
+   
+    
+    let a = answer.split(',');
+    if(a.length < 3){
+        alert('fel');
+    }
+
+    let total = +a[1] * +a[2];
+
+    alert(total < +a[0]? 'Du kommer betala' + total+' kr \n Du kan köpa en gångsbiljett': 'Du kan köpa årskort' )
+   
     
 </script>
     

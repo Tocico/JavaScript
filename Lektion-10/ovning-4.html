@@ -11,17 +11,17 @@
         function a(points){
        let grade = '';
        
-      if(0 <points && points < 25){
+      if((0 <points) && (points < 25)){
         grade = 'F';
-      }else if(25 <= points && points < 30){
+      }else if((25 <= points) && (points < 30)){
         grade = 'E';
-      }else if(30 <= points && points < 35){
+      }else if((30 <= points) && (points < 35)){
         grade = 'D';
-      }else if(35 <= points && points < 40){
+      }else if((35 <= points) && (points < 40)){
         grade = 'C'; 
-      }else if(40 <= points && points < 45){
+      }else if((40 <= points) && (points < 45)){
         grade = 'B'; 
-       }else if(45 <= points && points <= 50){ 
+       }else if((45 <= points) && (points <= 50)){ 
         grade = 'A'; 
        }
        else{
@@ -29,7 +29,7 @@
        }
        return grade;
     }
-       alert('Din grade är'+ a(points));
+       alert('Din grade är: '+ a(points));
         
     </script>
     
