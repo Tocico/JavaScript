@@ -10,16 +10,17 @@
         let sum = 0;
         
         while(true){
-            n = +prompt('Skriv ett heltal');
+            n = prompt('Skriv ett heltal');
         if(n === null)
         break;
 
-
+         n = Number(n);
         if(Number.isInteger(n)){
             for(i = 1; i<= n; i++){
                 sum += i;
             }
-            break;           
+            alert('Summan är' + sum);
+              break;        
         }
         else{
             alert('Felaktig inmatning!');
@@ -27,8 +28,7 @@
         }
         
     }    
-    
-    alert('Summan är' + sum);
+    alert('Hejdå');
 
         
         

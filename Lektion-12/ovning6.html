@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <p>första ordet i en ny mening. man sätter alltid stor bokstav på det första ordet i en ny mening. detta för att visa att en ny kommunikation startar.</p>
+<script>
+      let p = document.getElementsByTagName('p');
+      for (let i = 0; i < p.length; i++) {
+          let str = p[i].innerHTML;
+
+          str = str.split('.');
+          for(let i = 0; i< str.length; i++){
+          if(str[i].charAt(0)!== str[i].toUpperCase()){
+                 str += str[i].charAt(0).toUpperCase() + str[i].substring(1);
+          }
+        }
+        //    for(let i = 0; i< str.length; i++){
+        //      console.log(cap(str));
+
+             
+         
+          
+              
+            // str = cap(str);
+            // str = punkt(str);
+            p[i].innerHTML = str;
+           }
+        
+        
+        // function cap(str){
+        //  return str[i].charAt(0).toUpperCase() + str.substring(1); 
+          
+    //   }
+    //   function punkt(str){
+    //       if(str[str.length-1]!== '.'){
+    //           return str += '.';
+    //       }
+    //       return str;
+    //   }
+
+
+</script>    
+    
+</body>
+</html>

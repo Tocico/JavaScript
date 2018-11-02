@@ -6,37 +6,37 @@
 </head>
 <body>
     <script>
+        function a(){
+        while(true){
         
-        let points = +prompt('Hur många poängen har du fått?');
-        function a(points){
-       let grade = '';
-       switch(true){
-          case points < 25:
-             grade = 'F';
-             break;
-          case (25 <= points) && (points < 30): 
-            grade = 'E';
+        let points = prompt('Hur många poängen har du fått?');
+        alert(points);
+        if(points === 0){
             break;
-          case (30 <= points) && (points < 35): 
-             grade = 'D';
-             break;
-          case (35 <= points) && (points < 40): 
-             grade = 'C';
-             break;
-          case (40 <= points) && (points < 45): 
-              grade = 'B'; 
-              break;
-          case (45 <= points) && (points <= 50): 
-              grade = 'A'; 
-              break;
-          default:
-             alert('Skriva heltal mellan 0-50');
+        }
+        if(points > 50 || points < 0 || isNaN(points) || points === ''){
+            alert('Fel');
+            continue;
+        }
+        
+        let grade = '';
+        switch(true){
+
+          case (points >= 45): grade = 'A'; break;
+          case (points >= 40): grade = 'B'; break;
+          case (points >= 35): grade = 'C'; break;
+          case (points >= 30): grade = 'D'; break;
+          case (points >= 25): grade = 'E'; break;
+          case (points < 25):  grade = 'F'; break;
 
        }
-       return grade;
-    }
-       alert('Din grade är: '+ a(points));
-        
+       alert('Din grade är:  '+ grade);
+    } // While
+     alert('hejdå');  
+} 
+  
+a();
+
     </script>
     
 </body>

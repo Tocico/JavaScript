@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id='demo'>Dölj texten genom att klicka på knappen nedan</p>
+    <button>Dölj</button>
+
+    <script>
+        let el = document.getElementsByTagName('button')[0];
+        el.onclick = hideDisplay;
+
+        function hideDisplay(){
+            document.getElementById('demo').style.display = 'none';
+        }
+      
+    </script>
+    
+</body>
+</html>

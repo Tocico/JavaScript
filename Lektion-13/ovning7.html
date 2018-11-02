@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <button>Wha† is the time now?</button>
+   <h1 id ='time'></h1>
+    <script>
+        let el = document.getElementsByTagName('button')[0];
+        el.onclick = showTIme;
+
+        function showTIme(){
+            setInterval( function(){
+
+            document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
+            },1000)
+        }
+
+        
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>Stycke 1</p>
+    <p>Stycke 2.</p>
+    <p>Stycke 3</p>
+    <h1 id = 'demo'>hej</h1>
+
+    <script>
+        let p = document.getElementsByTagName('p');
+        
+        for(let i = 0; i< p.length; i++){
+            let str = p[i].innerHTML; //Hämtat elemnt
+            if(str[str.length-1] !== '.'){
+               str += '.';
+            }
+            p[i].innerHTML = str; //Skicka tillbaka trädet
+        }
+
+        
+        demo.innerHTML = document.getElementById('demo').innerHTML.toUpperCase();
+
+
+        
+        
+        </script>
+    
+</body>
+</html>

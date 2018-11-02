@@ -6,31 +6,37 @@
 </head>
 <body>
     <script>
-        let points = +prompt('Hur många poängen har du fått?');
-        
-        function a(points){
+      
+  
+      while(true){
+        let points = prompt('Hur många poängen har du fått?');
+          if(points === null){
+            break;
+          }
+          if(points>50 || points < 0 || points === '' || isNaN(points)){
+            alert('Skriv ett heltal mellan 0 - 50 ');
+            continue;
+          }
+
        let grade = '';
        
-      if((0 <points) && (points < 25)){
+      if(points <= 25){
         grade = 'F';
-      }else if((25 <= points) && (points < 30)){
+      }else if(points <= 30){
         grade = 'E';
-      }else if((30 <= points) && (points < 35)){
+      }else if(points <= 35){
         grade = 'D';
-      }else if((35 <= points) && (points < 40)){
+      }else if(points <= 40){
         grade = 'C'; 
-      }else if((40 <= points) && (points < 45)){
+      }else if(points <= 45){
         grade = 'B'; 
-       }else if((45 <= points) && (points <= 50)){ 
+       }else if(points <= 50){ 
         grade = 'A'; 
        }
-       else{
-           alert('Du kan mata in heltal mellan 0-50 ');
-       }
-       return grade;
+       
+       alert('Din grade är: '+ grade);
     }
-       alert('Din grade är: '+ a(points));
-        
+        alert('Hej då');
     </script>
     
 </body>

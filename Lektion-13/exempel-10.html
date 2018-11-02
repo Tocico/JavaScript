@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exempel 10</h1>
+     <button id = 'btnDate'>Visa dagens datum</button>
+     <p id='date'></p>
+     <p id='time'></p>
+
+     <button id = 'hide'>Hide</button>
+     <button id = 'show'>Show</button>
+     <script>
+         //Hämta en referens till knappen
+         let btnDate = document.getElementById('btnDate');
+         let btnHide = document.getElementById('hide');
+         let btnShow = document.getElementById('show');
+
+         
+         //Koppla event med standard DOM Events
+        //  btnDate.onclick = displayDate;
+
+        //Koppla flera event listener till knappen
+        btnDate.addEventListener('click', displayDate);
+        btnDate.addEventListener('click', displayTime);
+        btnHide.addEventListener('click', hideDisplay);
+        btnShow.addEventListener('click', showDisplay);
+        
+
+        
+
+
+        //Skapa funktionen
+        function displayDate(){
+            document.getElementById('date').innerHTML = new Date().toLocaleDateString();
+            
+        }
+        
+        function displayTime(){
+            document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
+            
+        }
+        setInterval(displayTime,1000);
+
+        function hideDisplay(){
+            
+            document.getElementById('time').style.display = 'none';
+            document.getElementById('date').style.display = 'none';
+        }
+        
+        function showDisplay(){
+            document.getElementById('time').style.display = 'block';
+            document.getElementById('date').style.display = 'block';
+        }
+
+        
+     </script>    
+</body>
+</html>

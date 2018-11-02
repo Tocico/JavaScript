@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /* Skapa en CSS-klass. (OBS! En punkt före namnet) */
+    .cool{
+        color: white;
+        background-color: greenyellow;
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Exempel 4</h1>
+    <p>Stycke 1</p>
+    <p>Stycke 2</p>
+    <p>Stycke 3</p>
+
+
+    <script>
+      //Hämta alla p-element
+      let p = document.getElementsByTagName('p');
+
+    //Skriv ut innehållet av alla p i console
+  
+      console.log(p); // returnerar en HTMLCOllection
+
+      for(let i = 0; i < p.length; i++){
+          console.log(p[i].innerHTML);
+          p[i].style.color = 'red'; // Sämsta sättet (Innline style är inte bra)
+          p[i].className = 'cool'; // Ingen punkt behövs
+      }
+    
+    </script>
+    
+</body>
+</html>

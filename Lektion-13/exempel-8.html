@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exempel 8</h1>
+    <p>
+    Username:
+    <input type="text" id='username'>
+    </p>
+    <p id = 'feedback'></p>
+    <p>
+        Password:
+        <input type="password" id='password'>
+    </p>
+    <p id = 'feedbackPass'></p>
+
+    <button>Login</button>
+
+
+    <script>
+        // Hämta nödvändiga element
+        let elUser = document.getElementById('username');
+        let elPass = document.getElementById('password');
+        let elMsg = document.getElementById('feedback');
+        let elMsg2 = document.getElementById('feedbackPass');
+
+        //Koppla events till olika funktioner
+        elPass.oninput = checkPass;
+        elUser.oninput = checkUsername;
+        
+        // Ändra färger
+        elMsg.style.color = 'red';
+        elMsg2.style.color = 'red';
+
+
+        function checkUsername(){
+            console.log(elUser.value); //OBS! innerHTML funkar inte med input
+
+            if(elUser.value.length >= 5){
+                elMsg.innerHTML = 'minst 5';
+            }
+            // if(elUser.value.length <= 5){
+            //     elUser.value.color = 'green';
+            // }
+            else{
+                elMsg.innerHTML = '';
+            }
+        }
+        
+        function checkPass(){
+            console.log(elPass.value); //OBS! innerHTML funkar inte med input
+            
+            elMsg2.innerHTML= elPass.value.length <= 8? 'minst 8':  ''; // Ternary
+            // if(elPass.value.length <= 8){
+            //     elMsg2.innerHTML = 'minst 8';
+            // }
+            // else{
+            //     elMsg2.innerHTML = '';
+            // }
+        }
+
+
+        // let elPass = document.getElementById('password');
+       
+    </script>
+    
+</body>
+</html>

@@ -42,10 +42,10 @@ console.log('Du måste jobba dag '+ dag + 'för att tjäna minst 10 miljoner');
 
 
 
-let day = 1;
-let salary = 1;
+let d = 1;
+let s = 1;
 
-for(salary = 0; salary <= 10000000; salary*=2){
-    day ++;
+for(s = 0; s  <= 10000000; s *=2){
+    d ++;
 }
-console.log('Det tar '+ day);
+console.log(d);

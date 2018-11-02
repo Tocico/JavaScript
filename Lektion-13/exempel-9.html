@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exempel 9</h1>
+    Ange pris exkl. moms: 
+        <input type="text" id = 'price1'>
+    <button id = 'btnPrice'>Beräkna pris inkl. moms</button>
+    <p id='price2'>Resultat</p>
+
+    <script>
+        //Hämta nödvändiga element
+
+        let price1 = document.getElementById('price1');
+        let price2 = document.getElementById('price2');
+        let btnPrice = document.getElementById('btnPrice');
+
+        //Koppla event 
+        btnPrice.onclick = getPrice; //Inga paranteser
+        btnPrice.onclick = getMessage; //Vi får inte lägga till funktionen
+
+
+        function getPrice(){
+             price2.innerHTML = price1.value * 1.25; //price1 är input därför använda man value
+
+        }
+    
+    </script>
+
+</body>
+</html>

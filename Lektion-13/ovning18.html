@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let date = new Date();
+        while(true){
+        let m = prompt('Ange ditt födelsedatum i detta format ÅÅÅÅ-MM-DD','ÅÅÅÅ-MM-DD');
+        if(m === null){
+            break;
+        }
+        if(m.length === 10){
+            
+            arr = m.split('-');
+            let myYear = Number(arr[0]);
+            let myMonth = Number(arr[1]);
+            let myDay = Number(arr[2]);
+            let show = getDate(myYear,myMonth,myDay);
+            document.write(`Du är ${show[0]} år, ${show[1]} månader och ${show[2]} dagar gammal`); 
+            break;
+        }
+        else if(m === '' || isNaN(m)){
+            alert('skriv ditt födelsedagsdatum');
+            continue;
+        }
+    function getDate(myYear,myMonth,myDay){
+
+    let nowYear = date.getFullYear();
+    let nowMonth = date.getMonth()+1;
+    let nowDay = date.getDate();
+
+    let diffYear = nowYear - myYear;
+    let diffMonth = nowMonth - myMonth;
+     let diffDay = nowDay - myDay;
+
+    //---------------age---------------------------
+    let now = (nowYear*10000) + (nowMonth*100) + nowDay;
+    let my = (myYear*10000) + (myMonth*100) + myDay;
+
+    let age = Math.floor((now-my)/10000);
+    
+    //---------------month--------------------------
+
+    if(diffMonth < 0){ 
+        diffMonth += 12;
+    }
+
+    //--------------days------------------------------
+    if(diffDay < 0){
+        diffMonth--;
+        diffDay += 31;
+
+    if(diffMonth < 0){
+        diffYear--;
+        diffMonth += 12;
+    }
+
+    }
+    
+    return [age,diffMonth,diffDay];
+
+}
+        
+    }
+   
+    
+    
+    </script>
+    
+</body>
+</html>

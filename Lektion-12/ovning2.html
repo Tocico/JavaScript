@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      .nice{
+          color: green;
+      }
+    </style>
+</head>
+<body>
+    <h1>Apple.</h1>
+    <h1>Orange</h1>
+    <h1>Lemon</h1>
+
+    <script>
+         let h = document.getElementsByTagName('h1');
+         for (let i = 0; i < h.length; i++) {
+              let str = h[i].innerHTML;
+              if(str[str.length-1] !== '.'){
+                  str += '.';
+                }
+                
+                h[i].innerHTML = str;
+            }
+
+
+        //  let h = document.getElementsByTagName('h1');
+        //  for(let i = 0; i<h.length; i++){
+        //      h = h[i].innerHTML;
+        //      h[0].className = 'nice';
+             
+        //  }
+
+
+
+//   let h = document.getElementsByTagName('h1');
+
+//       let first = h[0];
+//       first.className = 'nice';
+
+//       h[h.length-1].className = 'nice';
+
+
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>

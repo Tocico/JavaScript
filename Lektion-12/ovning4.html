@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .nice{
+        color: green;
+    }
+</style>
+</head>
+<body>
+    <p>Stycke 1</p>
+    <p>stycke 2</p>
+    <p>stycke 3</p>
+    <script>
+        let p = document.getElementsByTagName('p');
+
+        for(let i = 0; i < p.length; i++){
+            let st = p[i].innerHTML;
+            // if(st.charAt(0) !== st.toUpperCase()){
+            //    st = st.replace(st.charAt(0),st.charAt(0).toUpperCase())
+            // }
+            st = capitalize(st);
+            st = addDotToEndo(st);
+            p[i].innerHTML = st;
+            p[i].className = 'nice';
+
+        }
+
+        function addDotToEndo(st){
+            if(st[st.length-1] !== '.'){
+            return st += '.';
+            }
+            return st;
+        }
+
+        function capitalize(st){
+            return st.charAt(0).toUpperCase() + st.substring(1);
+        }
+
+        
+        
+    </script>
+    
+</body>
+</html>

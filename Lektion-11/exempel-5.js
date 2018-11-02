@@ -9,17 +9,8 @@ for (let row = 1; row <= 10; row++) {
         
     }
     
-    table += '\n';
+   table += '\n';
 
     
 }
 console.log(table);
-
-let day = 1;
-let salary = 1;
-
-for(salary = 0; salary <= 10000000; salary*=2){
-    day ++;
-}
-console.log('Det tar '+ day);
-
