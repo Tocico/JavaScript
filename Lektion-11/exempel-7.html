@@ -6,16 +6,24 @@
 </head>
 <body>
     <script>
-        let again = true;
-        do{
-            alert('Välkomment till spelet');
-            //Kör spelet....
-            again = confirm('Vill du spela igen?');
-            console.log(again);
+        // let again = true;
+        // do{
+        //     alert('Välkomment till spelet');
+        //     //Kör spelet....
+        //     again = confirm('Vill du spela igen?');
+        //     console.log(again);
 
-        }while(again);
+        // }while(again);
 
-        alert('Hejdå!');
+        // alert('Hejdå!');
+
+        function sum(n) {
+if (n === 0)
+return 0;
+else
+return n + sum(--n);
+}
+console.log(sum(5));
         
         
         

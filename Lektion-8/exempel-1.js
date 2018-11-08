@@ -11,7 +11,7 @@ toshiko.info = function(){
     console.log(this.name + this.age);
 }
 
-//En metod som returnerar en sträng
+// En metod som returnerar en sträng
 toshiko.info = function(){
     return `${this.name}  ${this.age} år gammal`;
 }

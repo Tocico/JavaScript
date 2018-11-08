@@ -13,10 +13,10 @@
     <h1 id = 'time'></h1>
     <script>
 function getTime(){
+    setInterval( function(){
     document.getElementById('time').innerHTML = new Date().toTimeString().substring(0,8);
-        }
-        setInterval(getTime,1000);
-    
+        },1000);
+    }
 
 // function getTime(){
 //     let el = document.getElementById('time');

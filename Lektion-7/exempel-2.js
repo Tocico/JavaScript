@@ -67,7 +67,7 @@ console.log(x2); //1
 
 // Kopiera ett objekt(svårt)
 let kuno = toshiko;
-kuno.name = "Kajsa";
+kuno.name = "taeko";
 console.log(toshiko.name); // Kajsa
 console.log(kuno.name);    // Kajsa
 // toshiko och kuno pekar på samma objektet!
@@ -81,6 +81,13 @@ toshiko2.age = toshiko.age;
 // O.S.V
 console.log(toshiko2);
 
+toshiko2.name = 'Hitoshi';
+console.log(toshiko2);
+console.log(toshiko);
+
+let hino = {...toshiko}; 
+console.log(hino);
+
 // Arrayer är också objekt
 let arr1 = [1,2,3];
 let arr2 = arr1; 
@@ -89,8 +96,13 @@ arr2[1] = 200;
 console.log(arr2); //100,200,3
 console.log(arr1); // 100,200,3
 
+let arr3 = {...arr1};
+console.log(arr3);
+
 // Kopierar
 let toshi = { age: 29 };
 let toshi1 = Object.assign({weight: 50}, toshi);
 console.log(toshi); 
 console.log(toshi1); 
+
+

@@ -22,11 +22,11 @@ console.log('-------------------------------------------------------------------
 
 //Funktioner med två parametrar
 //Skapa en funktion som beräkna summan av två tal
-function sum (x,y){
-    console.log(x + y);
+function sum2 (x1,y1){
+    console.log(x1 + y1);
 }
-sum(7,9); //16
-sum(); // NaN
+//sum(7,9); //16
+sum2(); // NaN
 
 function sum (x = 0,y = 0){
     console.log(x + y);
@@ -128,4 +128,8 @@ manyThings(1,2,3);
 manyThings("Toshiko","Kuno",1);
 manyThings();
 
+let j ;
 
+console.log(j + j ); //NaN
+console.log(j - j ); //NaN
+console.log(null / null);

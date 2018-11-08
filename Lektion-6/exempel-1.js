@@ -4,10 +4,10 @@
 function name(){
     // En eller flera satser;
 }
-
+*/
 // Exempel-1 - en parameterlös funktion
 function hej(){
-    alert('Hej från en funktion!');
+    console.log('Hej från en funktion!');
 }
 
 // Anropa en funktion (call / invoke)
@@ -39,17 +39,25 @@ function shop(money) {
 
 console.log('Växel är '+ shop(100) + 'kr');
 
-function hej1(msg){
+function hej(msg){
     console.log(msg);
     }
-    function hej2(){
+    function hej(){
     console.log("En parameterlös funktion");
     }
-    hej1("Argument – första anropet");
-    hej2("Argument – andra anropet");
+    function hej(){
+    console.log("En parameterlös sista");
+    }
+    hej("Argument – första anropet");
+    hej("Argument – andra anropet");
 
     function meat (kr){
-        return  kr + 'kr';
+         return kr + 'kr';
 }
 let sum = meat(100);
 console.log('Kött kostar'+ ' ' + sum);
+
+function a (a){
+    console.log('hej' + a);
+}
+a();

@@ -28,7 +28,7 @@ function fullName1 (firstName, lastName){
     })();
     
     
-    let result = (function msg () {
+    let result = (function () {
        return 'Jag är en IIFE-2';
        })();
 

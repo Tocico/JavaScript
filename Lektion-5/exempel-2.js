@@ -1,5 +1,6 @@
   //<<<aritmetiska operatorer i JS
 
+
 let y = 5 ;
 let x;
 
@@ -14,6 +15,7 @@ x = y % 2; //1 är resten vid heltalsdividition
 x = 10 % 3; //1
 x = 7 % 5; //2
 x = 5 % 7; // 余りの数は5 
+console.log(x);
 
 // Ökningsoperator
 x = 10;
@@ -71,10 +73,8 @@ x = "1" / "2";
 
 console.log(x);  
 
-let x = "apple";
-x = x * 0 ; // NaN
-x = x - 2;
-x = x + NaN;
+let q = "apple";
+x = q * 0 ; // NaN
+x = q - 2;
 console.log(x);
-
-console.log(1+1); 
+x = q + NaN;

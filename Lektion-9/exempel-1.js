@@ -95,7 +95,7 @@ nameArray = fullName.split(' ');
 console.log(nameArray); //[ '', '', 'Toshiko', '', '', 'kuno', '', '' ]
 
 //Chaining. En sats istället för två föregående satser
-fullName = ' taeko kuno '
+fullName = ' taeko   kuno    '
 nameArray = fullName.trim().split(' ');
 console.log(nameArray);
 

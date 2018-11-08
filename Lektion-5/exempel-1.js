@@ -29,7 +29,7 @@ console.log(bil);
 //En array i JS kan innehålla olika typer
 let person = ['Toshiko','Kuno',29 , true];
 
-// Du kan skapa4 olika variabeler instället för en array
+// Du kan skapa4 olika variabeler istället för en array
 let firstName = 'toshiko';
 let lastName = 'kuno';
 let age = '29';
@@ -98,8 +98,9 @@ console.log(test4.length);
 
 let test5 = new Array('1973');
 test5.push(2008);
-test5.push(2018);
 console.log(test5); 
+let len = test5.push(2018);
+console.log(len);
 
  
 

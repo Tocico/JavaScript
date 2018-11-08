@@ -46,10 +46,10 @@ console.log('--------------------------');
 
 let st = '';
 for(let i = 3; i <= 10; i=i+3){
-    st += i;
-    if(i < 9){
-     st += ','
-    }
-}
-console.log(st);
+    st += i + ',';
+//     if(i < 9){
+//      st += ','
+//     }
+ }
+console.log(st.substring(0,st.length-1));
 

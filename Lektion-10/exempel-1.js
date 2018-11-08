@@ -27,7 +27,7 @@ function encourage(){
 // console.log(greeting); // God dagen   Js struntar i gammalt värdet
 
 let hour = new Date().getHours();
-let greeting = 18;
+let greeting = '';
 if(hour < 12){
     greeting = 'Good morgon';
 }
@@ -84,7 +84,7 @@ x = '5';
 if(x !== 5){ // true 
     console.log(x + 2); // 52
 }    
-x = '5';
+x = 5;
 if(x != 5){ // False 
     console.log(x + 2); // Ingenting
 }    

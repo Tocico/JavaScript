@@ -16,6 +16,9 @@
     <button onclick="myFunction('demo1','Hello demo1'); changeColor('demo1','red')">Klicka här för att ändra p med id=demo</button>
     <button onclick="myFunction('demo2','Hello demo2'); changeColor('demo2','green')">Klicka här för att ändra p med id=demo</button>
     <button onclick="myFunction('demo3','Hello demo3'); changeColor('demo3','blue')">Klicka här för att ändra p med id=demo</button>
+    <button onclick="testThis(this)" id="btnTestThis">
+            Klicka här för att testa "this"
+        </button>
 
     <script>
         function myFunction(id,text){
@@ -37,6 +40,16 @@
         el.innerHTML = 'Hello First paragraph World!';
         el.style.color ='green';
     }
+    function testThis(el){
+        console.info("el peker på elementet (knappen): " + el);
+        console.info("Knappens tidigare text är : " + el.innerHTML);
+        // Ändra knappens text
+        el.innerHTML = "HELLO";
+        console.info("Ny text på knappen: " + el.innerHTML);
+    }
+    btnTestThis = document.getElementById('btnTestThis');
+    // Visa info om knappen i console med metoden dir
+    console.dir(btnTestThis);
 
     </script>
 </body>

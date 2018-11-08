@@ -32,22 +32,26 @@ if(again)
    mobile = "05645-453453";
    console.log(mobile);
 
-//    console.log(mobile);
-//    var mobile; //ok eftersom mobile har deklarerats med var
-//    mobile = "05645-453453";
+   console.log(mobile2);
+   var mobile2; //ok eftersom mobile har deklarerats med var
+   mobile2 = "05645-45345444";
 
    
-//    console.log(adress);
-//    let adress;
-//    adress = "dfsdfsdff 4";
+// console.log(adress);
+// let adress;
+// adress = "dfsdfsdff 4";
 
 
 // 5. Null
 let nothing = "Something"
 nothing = "";
+console.log(typeof nothing); // string
+nothing = null;
 console.log(nothing);
-// nothing = null;
-// console.log(nothing);
+
+let a = 'hej';
+a = null;
+console.log(typeof a);
 
 
 //    var nothing = null;

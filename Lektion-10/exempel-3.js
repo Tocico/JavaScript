@@ -12,7 +12,7 @@ if(false || 0 || null || NaN || undefined || '' || "" ){
      console.log('vi kommer aldrig hit');
 }
 
-let x = '';
+let x ='';
 if(x === ''){ 
     console.log('x är en tom sträng');
 }

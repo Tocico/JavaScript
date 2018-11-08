@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+       let cost = prompt('Vad kostar det inkl moms?'); //125
+       let moms = prompt('momsatsen?'); //25
+       let momsats = moms / 100; //0,25
+       let excost = 0;
+       let delsmoms = 0;
+
+       function cal(c,m){
+           let tax = 1 + momsats;
+           let excost = cost / tax;
+           let delsmoms = excost * momsats;
+           return alert(`delmoms kostar ${delsmoms.toFixed(2)} % \nexkl costar ${excost.toFixed(2)} kr`);
+
+       }
+        cal(cost,momsats);
+    
+    
+    </script>
+    
+</body>
+</html>

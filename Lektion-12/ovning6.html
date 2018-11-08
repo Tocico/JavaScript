@@ -6,41 +6,42 @@
 </head>
 <body>
         <p>första ordet i en ny mening. man sätter alltid stor bokstav på det första ordet i en ny mening. detta för att visa att en ny kommunikation startar.</p>
+        <p>mer. lite texten.</p>
+        <p>mer test</p>
 <script>
-      let p = document.getElementsByTagName('p');
-      for (let i = 0; i < p.length; i++) {
-          let str = p[i].innerHTML;
-
-          str = str.split('.');
-          for(let i = 0; i< str.length; i++){
-          if(str[i].charAt(0)!== str[i].toUpperCase()){
-                 str += str[i].charAt(0).toUpperCase() + str[i].substring(1);
-          }
+     /* Pseudokod - beskrivning på en algoritm
+     1. Hämta alla p-taggat
+     2. Gå igenom alla taggar (loop)
+     2.1. Spara alla meningar i en array
+     2.2. Iterera över arrayen (en inre loop)
+     2.2.1. Ändra den första bokstaven till versal
+     2.3. konvertera till sträng och uppdatera DOM
+     
+     */
+    
+    // 1. Hämta alla p-taggat
+    let allP = document.getElementsByTagName('p');
+    
+    // 2. Gå igenom alla taggar (loop)
+    for (let i = 0; i < allP.length; i++) {
+        let str = allP[i]; // REferens till p-taggen
+        let stycke = str.innerHTML.split('.');
+        
+        // 2.2. Iterera över arrayen (en inre loop)
+        for(let i = 0; i < stycke.length; i ++){
+            stycke[i] = cap(stycke[i]);
+            console.log(stycke);
+    
+            str.innerHTML = stycke.join('. '); 
         }
-        //    for(let i = 0; i< str.length; i++){
-        //      console.log(cap(str));
+    }
+                    function cap(str){
+                        if(str.length < 1)
+                          return;
 
-             
-         
-          
-              
-            // str = cap(str);
-            // str = punkt(str);
-            p[i].innerHTML = str;
-           }
-        
-        
-        // function cap(str){
-        //  return str[i].charAt(0).toUpperCase() + str.substring(1); 
-          
-    //   }
-    //   function punkt(str){
-    //       if(str[str.length-1]!== '.'){
-    //           return str += '.';
-    //       }
-    //       return str;
-    //   }
-
+                        str = str.trim(); // Rensa alla blanka tecken
+                        return str.charAt(0).toUpperCase() + str.substring(1) ;
+                    }
 
 </script>    
     

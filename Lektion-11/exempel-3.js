@@ -7,6 +7,7 @@ while(i <= 10){
 }
 
 
+
 // Övning: Skriv koden ovan i for-sats istället
 for(let i = 1; i <= 10; i++){
     console.log(i+ ' x 5 =' + i * 5);
@@ -43,3 +44,27 @@ for(let r = 1; r <= 10; r++){
     tabel += '\n'
 }
 console.log(tabel);
+
+console.log('---------udda--------');
+for(let i= 1; i<=10; i++){
+    if(i%2 === 1){
+        console.log(i);
+    }
+}
+console.log('---------jämna--------');
+
+for(let i= 1; i<=10; i++){
+    if(i%2 === 0){
+        console.log(i);
+    }
+}
+
+let t = '';
+
+for(let i = 1; i <= 20; i ++){
+    for(let x = 1; x <= 20; x++){
+        t += i*x + '\t';
+    }
+    t += '\n';
+}
+console.log(t);

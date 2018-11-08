@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button>Generera ett lösenord</button>
+    <p></p>
+
+
+     <script>
+         //Hämta element
+          let el = document.getElementsByTagName('button')[0];
+  
+        // Koppla events till funktion
+         el.onclick = showPass;
+   
+        // Funktion för att slumpa vilken funktion ska kör
+         function showPass(){
+             let r = [showPass1(10),showPass2(11),showPass3(12)];  //3 olika funktion
+             let randomShow = Math.floor(Math.random()*r.length); //Slumpar av 3
+             return r[randomShow]; 
+
+         }
+     
+        function showPass1(n10){ // Om det är 10 tecken då ska denna funktion kör
+            let str = 'abcdefghijklmnopqrstuvwxyz'+'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789' + '#$%(){}@';
+            str = str.split(''); 
+            let s = '';
+            for (let i = 0; i < n10; i++) {
+            s += str[Math.floor(Math.random() * str.length)]; //slumpar 10 texken
+            }
+            return document.getElementsByTagName('p')[0].innerHTML = s; //Skicka texten till element
+        }
+        function showPass2(n11){ // Om det är 11 tecken då ska denna funktion kör
+            let str = 'abcdefghijklmnopqrstuvwxyz'+'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789' + '#$%(){}@';
+            str = str.split('');
+            let s = '';
+            for (let i = 0; i < n11; i++) {
+            s += str[Math.floor(Math.random() * str.length)]; //slumpar 11 tecken
+            }
+            return document.getElementsByTagName('p')[0].innerHTML = s;
+        }
+        function showPass3(n12){ // Om det är 12 tecken då ska denna funktion kör
+            let str = 'abcdefghijklmnopqrstuvwxyz'+'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + '0123456789' + '#$%(){}@';
+            str = str.split('');
+            let s = '';
+            for (let i = 0; i < n12; i++) {
+                s += str[Math.floor(Math.random() * str.length)]; // slumpar 12 tecken
+            }
+            return document.getElementsByTagName('p')[0].innerHTML = s;
+        }
+
+     
+     </script>
+    
+</body>
+</html>

@@ -5,43 +5,64 @@
     <title>Document</title>
 </head>
 <body>
+    <div id ='demo'></div>
     <script>
-        let arr = [];
-        let date = new Date();
         while(true){
-        let m = prompt('Ange ditt födelsedatum i detta format ÅÅÅÅ-MM-DD','ÅÅÅÅ-MM-DD');
-        if(m === null){
-            break;
-        }
-        if(m.length === 10){
-            
+            let arr = [];
+            let m = prompt('Ange ditt födelsedatum i detta format ÅÅÅÅ-MM-DD','ÅÅÅÅ-MM-DD');
+            if(m === null){
+                break;
+            }
+            if(m.length !== 10){
+                alert('skriv ditt födelsedagsdatum');
+                continue;
+            }
+        
+            if(m.charAt(4) !== '-' || m.charAt(7) !== '-'){
+                alert('Saknar - tecken!')
+                continue;
+            }
             arr = m.split('-');
-            let myYear = Number(arr[0]);
-            let myMonth = Number(arr[1]);
-            let myDay = Number(arr[2]);
-            let show = getDate(myYear,myMonth,myDay);
-            document.write(`Du är ${show[0]} år, ${show[1]} månader och ${show[2]} dagar gammal`); 
-            break;
-        }
-        else if(m === '' || isNaN(m)){
-            alert('skriv ditt födelsedagsdatum');
-            continue;
-        }
-    function getDate(myYear,myMonth,myDay){
+            if(arr.length === 3){
+                let myYear = arr[0];
+                if(isNaN(Number(myYear))){
+                    alert('felaktig! year');
+                    continue;
+                }
+            
+                let myMonth = arr[1];
+                if(isNaN(Number(myMonth)) || myMonth< 1 || myMonth > 12 ){
+                    alert('felaktig! månad ');
+                    continue;
+                }
+                
+                let myDay = arr[2];
+                if(isNaN(Number(myDay)) || myDay< 1 || myDay > 31 ){
+                    alert('felaktig! dagar');
+                    continue;
+                }
+                else{
+                
+                let show = getDate(myYear,myMonth,myDay);
+                
+                
+                    document.getElementById('demo').innerHTML = (`Du är <h1>${show[0]}</h1> år, <h1>${show[1]}</h1> månader och <h1>${show[2]}</h1> dagar gammal`); 
+                    break;
+                }
+                
+             }
+           
+            function getDate(myYear,myMonth,myDay){
+                let date = new Date();
+                
+                let nowYear = date.getFullYear();
+                let nowMonth = date.getMonth()+1;
+                let nowDay = date.getDate();
 
-    let nowYear = date.getFullYear();
-    let nowMonth = date.getMonth()+1;
-    let nowDay = date.getDate();
+                let diffYear = nowYear - myYear;
+                let diffMonth = nowMonth - myMonth;
+                let diffDay = nowDay - myDay;
 
-    let diffYear = nowYear - myYear;
-    let diffMonth = nowMonth - myMonth;
-     let diffDay = nowDay - myDay;
-
-    //---------------age---------------------------
-    let now = (nowYear*10000) + (nowMonth*100) + nowDay;
-    let my = (myYear*10000) + (myMonth*100) + myDay;
-
-    let age = Math.floor((now-my)/10000);
     
     //---------------month--------------------------
 
@@ -53,15 +74,16 @@
     if(diffDay < 0){
         diffMonth--;
         diffDay += 31;
+    }  
 
+    //-------------yeara--------------------------------
     if(diffMonth < 0){
         diffYear--;
         diffMonth += 12;
     }
 
-    }
     
-    return [age,diffMonth,diffDay];
+    return [diffYear,diffMonth,diffDay];
 
 }
         

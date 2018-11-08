@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppgift1</title>
+</head>
+<body>
+        <!-- <p> År &ensp;Belopp</p>
+        <p id = 'demo'></p> -->
+    <script>
+
+
+        while(true){
+            let result = '';
+            
+            let money = prompt('Hur mycket pengar vill du sätta in?');
+            let year = prompt('Hur många år ska pengarna stå inne?');
+            
+            if(money === null || year === null){
+                break;
+            }
+            
+            if(money === '' || year === '' || isNaN(money) || isNaN(year)){
+                alert('Felaktigt! Skriv antal pengar och år igen');
+                continue;
+            }
+            if(!isNaN(Number(money)) && !isNaN(Number(year)) || money > 0  || year > 0){ // Om användaren matar in rätt 
+                let firstYear = 0;
+                let ranta = 1.035; // Räntasatsen
+                
+             while( firstYear < year){ // Medan loopar räknar
+                 money *= ranta;    
+                  firstYear++;
+                  
+                  firstYear + '\t' + money.toFixed(2) + '\n';
+                }
+                alert(result);
+                break;
+
+
+        }
+    }
+
+
+
+        
+    </script>
+    
+</body>
+</html>

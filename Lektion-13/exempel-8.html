@@ -39,7 +39,7 @@
         function checkUsername(){
             console.log(elUser.value); //OBS! innerHTML funkar inte med input
 
-            if(elUser.value.length >= 5){
+            if(elUser.value.length <= 5){
                 elMsg.innerHTML = 'minst 5';
             }
             // if(elUser.value.length <= 5){

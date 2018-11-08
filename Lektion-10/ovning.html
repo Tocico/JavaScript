@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+         while(true){
+      let points = prompt('Hur många poäng fick du?');
+      if(points === null){
+          break;
+      }
+      if(points === '' || points > 50 || isNaN(points)){
+          continue;
+      }
+ 
+      let grade = '';
+    //   points = Number(points);
+
+      switch(true){
+    
+          case points >= 45: grade = 'A'; break;
+          case points >= 40: grade = 'B'; break;
+          case points >= 35: grade = 'C'; break;
+          case points >= 30: grade = 'D'; break;
+          case points >= 25: grade = 'E'; break;
+          case points >= 0: grade = 'F'; break;
+          
+        }
+        alert('DIn grade är' + grade);
+}
+
+
+        
+        
+    </script>
+</body>
+</html>

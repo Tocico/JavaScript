@@ -36,13 +36,29 @@
     <div id = "demo"></div>
     <script>
         
-        function tim(){
+        // function tim(){
+        //     let date = new Date();
+        //     document.getElementById('demo').innerHTML=date.toTimeString().substr(0,8);
+        // }
+        // setInterval(tim,1000);
+    
+         function time(){
             let date = new Date();
-            document.getElementById('demo').innerHTML=date.toTimeString().substr(0,8);
-        }
-        setInterval(tim,1000);
-    
-    
+
+            document.getElementById('demo').innerHTML = date.toTimeString().substring(0,9);
+
+
+         }
+         setInterval(time,1000);
+
+
+
+
+
+
+
+
+
     
     </script>
     

@@ -18,3 +18,4 @@ console.log(sista);
 
 let alf3 = ['a','b','c'];
 console.log(alf3.unshift('e','f'));
+console.log(alf3);

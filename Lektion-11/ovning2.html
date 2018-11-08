@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = 0;
+
+        while(true){
+         let n = prompt('Mata in ');
+
+         if(n === null){
+             break;
+         }
+         if(n < 0 || n === '' || isNaN(n)){
+             alert('mata in');
+         }
+         n = Number(n);
+         if(Number.isInteger(n)){
+             for(let i = 1; i <= n; i++){
+                 answer += i;
+             }
+             alert(answer);
+             break;
+         }
+
+        } 
+        
+        alert('hej då');
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

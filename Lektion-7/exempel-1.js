@@ -56,8 +56,8 @@ function demo(){
 
     function demo2(){
         var local_3 = 'En lokal variabel';
-        //OBS! Om du glömmt 
         console.log(local_3); // En lokal variabel
+        //OBS! Om du glömmt 
     }
     demo2(); 
     //console.log(local_3); RefferenceError: local_3 is not defined

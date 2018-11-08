@@ -1,6 +1,6 @@
 let cars = new Array(2); // 2 utrymmet
 console.log(cars); 
-cars[cars.length] = "Volvo"; // lägga till en plats 
+cars[3] = "Volvo"; // lägga till en plats 
 console.log(cars.length);
 console.log(cars);
 // cars[2] = "Volvo";

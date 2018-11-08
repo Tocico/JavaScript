@@ -14,6 +14,7 @@ let car = {
       drive  : function(){console.log('drive...');
       },
       brake  : function(){console.log('Brake...');
+      
       },
       stop   : function(){console.log('stio...');
       },
@@ -21,9 +22,9 @@ let car = {
 
 };
 
-console.log(car.name);
-console.log(car.start()); //start...  I will start
-car.start(); // Brake...
-console.log(car.brake()); //undefined
-// return を書くか、 car.brake(); と書く
+// console.log(car.name);
+// console.log(car.start()); //start...  I will start
+//  car.start(); // Brake...
+car.brake(); //undefined
+// // return を書くか、 car.brake(); と書く
 

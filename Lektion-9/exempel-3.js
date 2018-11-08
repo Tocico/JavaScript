@@ -16,3 +16,7 @@ console.log(today.getSeconds());
 console.log(today.getTime());
 console.log(today.toDateString());
 console.log(today.toTimeString());
+
+console.log(today.setFullYear(2019));
+console.log(today.getFullYear()); //2019
+
